@@ -26,7 +26,7 @@ public class Week3Day1 {
                  *  
 		 * */
 
-		Pattern pattern = Pattern.compile("(?i)(?<!\\\\S)t[a-z]+(?!\\\\S)");
+		Pattern pattern = Pattern.compile("(?i)(?<!\\S)t[a-z]+(?!\\S)");
 		String[] result = st.split(" ");
 		for (int i = 0; i < result.length; i++) {
 			Matcher matcher = pattern.matcher(result[i]);
